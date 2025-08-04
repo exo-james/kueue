@@ -21,6 +21,8 @@ Read the [overview](https://kueue.sigs.k8s.io/docs/overview/) and watch the Kueu
 ## Features overview
 
 
+
+
 - **Job management:** Support job queueing based on [priorities](https://kueue.sigs.k8s.io/docs/concepts/workload/#priority) with different [strategies](https://kueue.sigs.k8s.io/docs/concepts/cluster_queue/#queueing-strategy): `StrictFIFO` and `BestEffortFIFO`.
 - **Advanced Resource management:** Comprising: [resource flavor fungibility](https://kueue.sigs.k8s.io/docs/concepts/cluster_queue/#flavorfungibility), [Fair Sharing](https://kueue.sigs.k8s.io/docs/concepts/preemption/#fair-sharing), [cohorts](https://kueue.sigs.k8s.io/docs/concepts/cluster_queue/#cohort) and [preemption](https://kueue.sigs.k8s.io/docs/concepts/cluster_queue/#preemption) with a variety of policies between different tenants.
 - **Integrations:** Built-in support for popular jobs, e.g. [BatchJob](https://kueue.sigs.k8s.io/docs/tasks/run/jobs/), [Kubeflow training jobs](https://kueue.sigs.k8s.io/docs/tasks/run/kubeflow/), [RayJob](https://kueue.sigs.k8s.io/docs/tasks/run/rayjobs/), [RayCluster](https://kueue.sigs.k8s.io/docs/tasks/run/rayclusters/), [JobSet](https://kueue.sigs.k8s.io/docs/tasks/run/jobsets/),  [plain Pod and Pod Groups](https://kueue.sigs.k8s.io/docs/tasks/run/plain_pods/).
@@ -34,6 +36,9 @@ Read the [overview](https://kueue.sigs.k8s.io/docs/overview/) and watch the Kueu
 - **Topology-Aware Scheduling**: Allows to optimize the Pod-to-Pod communication throughput by [scheduling aware of the data-center topology](https://kueue.sigs.k8s.io/docs/concepts/topology_aware_scheduling/).
 
 ## Production Readiness status
+
+
+
 
 - ✔️ API version: v1beta1, respecting [Kubernetes Deprecation Policy](https://kubernetes.io/docs/reference/using-api/deprecation-policy/)
 - ✔️ Up-to-date [documentation](https://kueue.sigs.k8s.io/docs).
@@ -83,6 +88,9 @@ kubectl apply -f examples/admin/single-clusterqueue-setup.yaml
 
 Then you can run a job with:
 
+
+
+
 ```shell
 kubectl create -f examples/jobs/sample-job.yaml
 ```
@@ -91,6 +99,9 @@ Learn more about:
 
 - Kueue [concepts](https://kueue.sigs.k8s.io/docs/concepts).
 - Common and advanced [tasks](https://kueue.sigs.k8s.io/docs/tasks).
+
+
+
 
 ## Architecture
 
